@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Programa de Contención Emocional · Overall × SER Centro Psicológico</title>
+  <meta name="description" content="Un espacio de apoyo psicológico para los colaboradores y sus familias, creado por Overall en convenio con SER Centro Psicológico." />
+  <meta property="og:title" content="Programa de Contención Emocional · Overall × SER" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===================================================
+     HEADER
+     =================================================== -->
+<header id="header" role="banner">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Navegación principal">
+      <a href="#inicio" class="nav-logo" aria-label="SER Centro Psicológico">
+        <img src="logo.jpg" alt="SER Centro Psicológico" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#que-es">Servicios</a></li>
+        <li><a href="#proceso">¿Cómo funciona?</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#footer">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer"
+           class="btn-primary" id="nav-cta">
+          Agenda una cita
+        </a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+  <div id="mobile-menu" class="mobile-menu" role="navigation" aria-label="Menú móvil">
+    <a href="#inicio">Inicio</a>
+    <a href="#que-es">Servicios</a>
+    <a href="#proceso">¿Cómo funciona?</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#footer">Contacto</a>
+    <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-primary">
+      📅 Separar mi cita
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- ===================================================
+     HERO
+     =================================================== -->
+<section id="hero" aria-labelledby="hero-heading">
+
+  <!-- Decorative blobs -->
+  <div class="deco-blob hero-blob-1"></div>
+  <div class="deco-blob hero-blob-2"></div>
+
+  <!-- Leaf top-right -->
+  <div class="deco-leaf hero-leaf-tr" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 90 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M45 155 C75 110 90 60 45 5 C0 60 15 110 45 155Z" fill="#c5d4a8" opacity="0.6"/>
+      <path d="M45 10 L45 150" stroke="#a8c278" stroke-width="1.2" opacity="0.4"/>
+      <path d="M45 40 C55 50 68 55 75 65" stroke="#a8c278" stroke-width="1" opacity="0.35"/>
+      <path d="M45 70 C35 80 22 85 15 95" stroke="#a8c278" stroke-width="1" opacity="0.35"/>
+      <path d="M45 100 C55 108 65 114 70 122" stroke="#a8c278" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <!-- Leaf bottom right (near image) -->
+  <div class="deco-leaf hero-leaf-br" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 70 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M35 115 C58 80 70 44 35 4 C0 44 12 80 35 115Z" fill="#c5d4a8" opacity="0.5"/>
+      <path d="M35 8 L35 110" stroke="#a8c278" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Content -->
+      <div class="hero-content fade-in">
+        <span class="hero-badge">En alianza con Overall</span>
+        <h1 id="hero-heading">Programa de Contención Emocional</h1>
+        <p>Un espacio de apoyo psicológico para los colaboradores y sus familias, creado por Overall en convenio con SER Centro Psicológico.</p>
+
+        <div class="hero-cta-group">
+          <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer"
+             class="btn-primary" id="hero-cta-1">
+            📅 Separar mi cita
+          </a>
+          <a href="https://www.ser.pe/" target="_blank" rel="noopener noreferrer"
+             class="btn-outline" id="hero-cta-2">
+            Conoce más de SER
+          </a>
+        </div>
+
+        <!-- Co-brand logos -->
+        <div class="hero-logos" aria-label="Alianza SER × Overall">
+          <img src="logo.jpg" alt="SER Centro Psicológico" />
+          <div class="hero-logos-divider" aria-hidden="true"></div>
+          <img src="logos/overall-logo.png" alt="Overall" />
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="hero-image-wrap fade-in" style="transition-delay:.15s">
+        <img class="hero-img"
+          src="https://images.unsplash.com/photo-1609220136736-443140cffec6?w=800&q=80&auto=format&fit=crop"
+          alt="Familia feliz – sonriendo juntos"
+          loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     ¿QUÉ ES?
+     =================================================== -->
+<section id="que-es" aria-labelledby="que-es-heading">
+  <div class="deco-blob que-es-blob"></div>
+  <div class="container">
+    <div class="que-es-grid">
+      <!-- Image left -->
+      <div class="que-es-img-wrap fade-in">
+        <img class="que-es-image"
+          src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=700&q=80&auto=format&fit=crop"
+          alt="Sesión psicológica – terapeuta y paciente"
+          loading="lazy" />
+      </div>
+      <!-- Content right -->
+      <div class="que-es-content fade-in" style="transition-delay:.1s">
+        <span class="section-label">¿Qué es?</span>
+        <h2 id="que-es-heading">Un programa para su bienestar integral</h2>
+        <p>El Programa de Contención Emocional de Overall, en alianza con SER Centro Psicológico, brinda atención psicológica especializada para los colaboradores y sus familias, con el objetivo de fortalecer su salud mental, su bienestar y su calidad de vida.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     SERVICIOS INCLUIDOS
+     =================================================== -->
+<section id="servicios" aria-labelledby="servicios-heading">
+  <div class="deco-blob servicios-blob-l"></div>
+
+  <!-- Right leaf -->
+  <div class="deco-leaf servicios-leaf-r" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 135 C66 95 80 52 40 6 C0 52 14 95 40 135Z" fill="#c5d4a8" opacity="0.55"/>
+      <path d="M40 10 L40 128" stroke="#a8c278" stroke-width="1.2" opacity="0.35"/>
+      <path d="M40 38 C50 48 62 53 68 62" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+      <path d="M40 68 C30 78 18 83 12 92" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+      <path d="M40 95 C50 103 60 109 65 117" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Servicios incluidos</span>
+      <h2 id="servicios-heading">Brindamos</h2>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card fade-in" style="transition-delay:.05s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <h3>Evaluaciones psicológicas</h3>
+        <p>Evaluación y orientación especializada según sus necesidades individuales y familiares.</p>
+      </article>
+
+      <article class="service-card fade-in" style="transition-delay:.1s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M21 21v-2a4 4 0 0 0-3-3.87"/>
+          </svg>
+        </div>
+        <h3>Terapias psicológicas individuales y de pareja</h3>
+        <p>Acompañamiento profesional en procesos personales, familiares y de pareja.</p>
+      </article>
+
+      <article class="service-card fade-in" style="transition-delay:.15s">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </div>
+        <h3>Pautas de crianza para padres</h3>
+        <p>Orientación y herramientas para una crianza saludable, consciente y respetuosa.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     PROCESO
+     =================================================== -->
+<section id="proceso" aria-labelledby="proceso-heading">
+  <div class="deco-blob proceso-blob"></div>
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">¿Cómo funciona?</span>
+      <h2 id="proceso-heading">Un proceso simple y confidencial</h2>
+    </div>
+    <div class="process-steps" role="list">
+
+      <div class="process-step fade-in" style="transition-delay:.05s" role="listitem">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <div class="step-num" aria-hidden="true">1</div>
+        <h3>Primer contacto</h3>
+        <p>Se solicita la cita a través de los canales habilitados.</p>
+      </div>
+
+      <div class="process-step fade-in" style="transition-delay:.1s" role="listitem">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div class="step-num" aria-hidden="true">2</div>
+        <h3>Agendamos</h3>
+        <p>Coordinamos la fecha y horario de atención.</p>
+      </div>
+
+      <div class="process-step fade-in" style="transition-delay:.15s" role="listitem">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div class="step-num" aria-hidden="true">3</div>
+        <h3>Atención psicológica</h3>
+        <p>Sesiones con especialistas de SER.</p>
+      </div>
+
+      <div class="process-step fade-in" style="transition-delay:.2s" role="listitem">
+        <div class="step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <div class="step-num" aria-hidden="true">4</div>
+        <h3>Seguimiento</h3>
+        <p>Acompañamiento continuo según sus necesidades.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     BENEFICIOS
+     =================================================== -->
+<section id="beneficios" aria-labelledby="beneficios-heading">
+  <!-- Right leaf -->
+  <div class="deco-leaf beneficios-leaf-r" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 90 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M45 155 C75 110 90 60 45 5 C0 60 15 110 45 155Z" fill="#c5d4a8" opacity="0.55"/>
+      <path d="M45 10 L45 148" stroke="#a8c278" stroke-width="1.2" opacity="0.35"/>
+      <path d="M45 40 C55 50 68 55 74 65" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+      <path d="M45 78 C35 88 22 93 16 103" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Beneficios</span>
+      <h2 id="beneficios-heading">Un apoyo para su vida personal y familiar</h2>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-item fade-in" style="transition-delay:.05s">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
+        <p>Mejora del bienestar emocional</p>
+      </div>
+
+      <div class="benefit-item fade-in" style="transition-delay:.1s">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="9" cy="7" r="4"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/><path d="M21 21v-2a4 4 0 0 0-3-3.87"/></svg>
+        </div>
+        <p>Herramientas para afrontar desafíos personales y familiares</p>
+      </div>
+
+      <div class="benefit-item fade-in" style="transition-delay:.15s">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <p>Fortalecimiento de relaciones interpersonales</p>
+      </div>
+
+      <div class="benefit-item fade-in" style="transition-delay:.2s">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <p>Aumento de la calidad de vida</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     CTA FINAL
+     =================================================== -->
+<section id="cta-final" aria-labelledby="cta-heading">
+  <div class="deco-blob cta-blob-r"></div>
+
+  <!-- Leaf bottom right -->
+  <div class="deco-leaf cta-leaf-r" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 80 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 135 C66 95 80 52 40 6 C0 52 14 95 40 135Z" fill="#c5d4a8" opacity="0.5"/>
+      <path d="M40 10 L40 128" stroke="#a8c278" stroke-width="1.2" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="cta-final-card fade-in">
+      <img class="cta-final-image"
+        src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=700&q=80&auto=format&fit=crop"
+        alt="Manos entrelazadas – apoyo y conexión" loading="lazy" />
+      <div class="cta-final-content">
+        <span class="section-label">¿Listo para empezar?</span>
+        <h2 id="cta-heading">Agenda tu cita</h2>
+        <p>Da el primer paso hacia tu bienestar.</p>
+        <div class="cta-final-btns">
+          <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer"
+             class="btn-primary" id="cta-btn-1">
+            📅 Separar mi cita
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://www.ser.pe/" target="_blank" rel="noopener noreferrer"
+             class="btn-outline" id="cta-btn-2">
+            Conoce más de SER
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================================================
+     FOOTER
+     =================================================== -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <!-- Logo sobre fondo blanco para que se vea bien -->
+        <div class="footer-logo-wrap">
+          <img src="logo.jpg" alt="SER Centro Psicológico" />
+        </div>
+        <p>Psicología de calidad para cada etapa de la vida, desde Lima para el mundo.</p>
+        <nav class="footer-socials" aria-label="Redes sociales de SER">
+          <a href="https://instagram.com/ser.pe" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </nav>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Dirección</h4>
+        <address>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Centro Comercial del Residencial San Felipe N°42, Jesús María</span>
+          </div>
+        </address>
+        <h4 style="margin-top:20px;">Contacto</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.37 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.72a16 16 0 0 0 6.37 6.37l.82-.82a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <a href="tel:+51997217679">+51 997 217 679</a>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:ser@ser.pe">ser@ser.pe</a>
+        </div>
+      </div>
+
+      <!-- En alianza con -->
+      <div class="footer-col">
+        <h4>En alianza con</h4>
+        <div class="footer-overall-logo">
+          <img src="logos/overall-logo.png" alt="Overall" />
+        </div>
+        <p style="font-size:13px; color:#666; line-height:1.6;">
+          Juntos promovemos el bienestar emocional de los colaboradores y sus familias.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 SER Centro Psicológico. Todos los derechos reservados. Lima, Perú.</p>
+      <p>Programa en convenio con Overall</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
