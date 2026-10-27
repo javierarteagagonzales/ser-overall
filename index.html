@@ -26,6 +26,7 @@
         <li><a href="#que-es">Servicios</a></li>
         <li><a href="#proceso">¿Cómo funciona?</a></li>
         <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#tarifario">Tarifario</a></li>
         <li><a href="#footer">Contacto</a></li>
       </ul>
       <div class="nav-actions">
@@ -44,6 +45,7 @@
     <a href="#que-es">Servicios</a>
     <a href="#proceso">¿Cómo funciona?</a>
     <a href="#beneficios">Beneficios</a>
+    <a href="#tarifario">Tarifario</a>
     <a href="#footer">Contacto</a>
     <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-primary">
       📅 Separar mi cita
@@ -309,7 +311,7 @@
 </section>
 
 <!-- ===================================================
-     CTA FINAL
+     AGENDA TU CITA
      =================================================== -->
 <section id="cta-final" aria-labelledby="cta-heading">
   <div class="deco-blob cta-blob-r"></div>
@@ -344,6 +346,368 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TARIFARIO
+     =================================================== -->
+<section id="tarifario" aria-labelledby="tarifario-heading">
+  <div class="deco-blob tarifario-blob-1"></div>
+  <div class="deco-blob tarifario-blob-2"></div>
+
+  <!-- Decorative Leaf -->
+  <div class="deco-leaf tarifario-leaf-r" aria-hidden="true">
+    <svg class="leaf-svg" viewBox="0 0 85 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M42 145 C70 100 85 55 42 5 C0 55 14 100 42 145Z" fill="#c5d4a8" opacity="0.55"/>
+      <path d="M42 10 L42 138" stroke="#a8c278" stroke-width="1.2" opacity="0.35"/>
+      <path d="M42 40 C52 48 64 54 70 62" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+      <path d="M42 75 C32 84 20 89 14 98" stroke="#a8c278" stroke-width="1" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="section-header fade-in">
+      <span class="section-label">Tarifas preferenciales</span>
+      <h2 id="tarifario-heading">Tarifario – Convenio Overall</h2>
+      <p class="section-sub">
+        Accede a tarifas exclusivas con descuentos especiales para colaboradores de Overall y sus familias. Atención presencial y online con la misma tarifa preferencial.
+      </p>
+    </div>
+
+    <!-- Controles dinámicos: Filtro de Categoría y Selector de Moneda -->
+    <div class="tarifario-controls fade-in">
+      <div class="category-tabs" role="tablist" aria-label="Categorías de atención">
+        <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-category="todos">
+          Todos los servicios
+        </button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="adultos">
+          Adultos
+        </button>
+        <button type="button" class="tab-btn" role="tab" aria-selected="false" data-category="menores">
+          Menores de edad
+        </button>
+      </div>
+
+      <div class="currency-toggle" role="group" aria-label="Selección de moneda">
+        <span class="currency-label">Ver en:</span>
+        <button type="button" class="currency-btn active" data-currency="soles" aria-pressed="true">
+          S/ Soles
+        </button>
+        <button type="button" class="currency-btn" data-currency="usd" aria-pressed="false">
+          US$ Dólares
+        </button>
+      </div>
+    </div>
+
+    <!-- Tarjeta del Tarifario Dinámico -->
+    <div class="tarifario-card fade-in">
+      <div class="table-responsive">
+        <table class="pricing-table" id="pricing-table" aria-label="Tabla de tarifas preferenciales">
+          <thead>
+            <tr>
+              <th scope="col" class="th-service">Servicio</th>
+              <th scope="col" class="th-cat">Público</th>
+              <th scope="col" class="th-regular">Valor referencial</th>
+              <th scope="col" class="th-discount">Descuento</th>
+              <th scope="col" class="th-final">Precio convenio</th>
+              <th scope="col" class="th-action"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- === ADULTOS === -->
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Sesión individual</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 120,00" data-usd="US$ 35,29">S/ 120,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 102,00" data-usd="US$ 30,00">S/ 102,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Sesión individual">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Paquete de 4 sesiones</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 410,00" data-usd="US$ 120,59">S/ 410,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 349,00" data-usd="US$ 102,65">S/ 349,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Paquete de 4 sesiones">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Sesión de pareja</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 180,00" data-usd="US$ 52,94">S/ 180,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 153,00" data-usd="US$ 45,00">S/ 153,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Sesión de pareja">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Paquete de 3 sesiones de pareja</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 495,00" data-usd="US$ 145,59">S/ 495,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 421,00" data-usd="US$ 123,82">S/ 421,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Paquete de 3 sesiones de pareja">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Evaluación integral – 5 sesiones</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 690,00" data-usd="US$ 202,94">S/ 690,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 587,00" data-usd="US$ 172,65">S/ 587,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación integral">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Evaluación emocional – 4 sesiones</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 460,00" data-usd="US$ 135,29">S/ 460,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 391,00" data-usd="US$ 115,00">S/ 391,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación emocional">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="adultos">
+              <td class="td-service">
+                <span class="service-name">Pautas de crianza – 3 sesiones</span>
+                <span class="mobile-tag">Adultos</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-adultos">Adultos</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 375,00" data-usd="US$ 110,29">S/ 375,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 319,00" data-usd="US$ 93,82">S/ 319,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Pautas de crianza">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <!-- === MENORES DE EDAD === -->
+            <tr data-category="menores" class="highlight-row">
+              <td class="td-service">
+                <span class="service-name">Apertura de historia clínica – padres</span>
+                <span class="mobile-tag">Menores de edad</span>
+                <span class="badge-special">¡Tarifa especial 50% off!</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 120,00" data-usd="US$ 35,29">S/ 120,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount badge-discount-high">50% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final price-highlight" data-soles="S/ 60,00" data-usd="US$ 17,65">S/ 60,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Apertura de historia clínica">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Sesión individual</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 110,00" data-usd="US$ 32,35">S/ 110,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 94,00" data-usd="US$ 27,65">S/ 94,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Sesión individual menores">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Paquete de 4 sesiones</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 395,00" data-usd="US$ 116,18">S/ 395,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 336,00" data-usd="US$ 98,82">S/ 336,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Paquete de 4 sesiones menores">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Evaluación integral – 5 sesiones</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 590,00" data-usd="US$ 173,53">S/ 590,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 502,00" data-usd="US$ 147,65">S/ 502,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación integral menores">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Evaluación emocional – 4 sesiones</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 460,00" data-usd="US$ 135,29">S/ 460,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 391,00" data-usd="US$ 115,00">S/ 391,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación emocional menores">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Evaluación de aprendizaje – 5 sesiones</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 590,00" data-usd="US$ 173,53">S/ 590,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 502,00" data-usd="US$ 147,65">S/ 502,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación de aprendizaje">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+            <tr data-category="menores">
+              <td class="td-service">
+                <span class="service-name">Evaluación de orientación vocacional – 5 sesiones</span>
+                <span class="mobile-tag">Menores de edad</span>
+              </td>
+              <td class="td-cat"><span class="badge-cat badge-menores">Menores</span></td>
+              <td class="td-regular">
+                <span class="price-original" data-soles="S/ 590,00" data-usd="US$ 173,53">S/ 590,00</span>
+              </td>
+              <td class="td-discount"><span class="badge-discount">15% DTO</span></td>
+              <td class="td-final">
+                <span class="price-final" data-soles="S/ 502,00" data-usd="US$ 147,65">S/ 502,00</span>
+              </td>
+              <td class="td-action">
+                <a href="https://forms.gle/9bFBkLj8nNJ2462U6" target="_blank" rel="noopener noreferrer" class="btn-book" aria-label="Agendar Evaluación de orientación vocacional">
+                  Agendar
+                </a>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Nota simple -->
+    <p class="tarifario-note-simple fade-in">
+      <strong>Nota:</strong> Tipo de cambio referencial S/ 3,40 por US$ (Precio US$ = Precio final S/ ÷ 3,40). Mismo precio presencial y online.
+    </p>
+
   </div>
 </section>
 

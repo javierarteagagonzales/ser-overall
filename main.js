@@ -98,4 +98,57 @@
     fadeEls.forEach(function (el) { el.classList.add('visible'); });
   }
 
+  // --- Dynamic Tarifario: Category filter & Currency switcher ---
+  const tabBtns = document.querySelectorAll('.category-tabs .tab-btn');
+  const currencyBtns = document.querySelectorAll('.currency-toggle .currency-btn');
+  const tableRows = document.querySelectorAll('#pricing-table tbody tr');
+
+  if (tabBtns.length > 0 && tableRows.length > 0) {
+    // Category tabs
+    tabBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        tabBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+
+        const cat = this.getAttribute('data-category');
+        tableRows.forEach(function (row) {
+          if (cat === 'todos' || row.getAttribute('data-category') === cat) {
+            row.classList.remove('hidden-row');
+          } else {
+            row.classList.add('hidden-row');
+          }
+        });
+      });
+    });
+
+    // Currency switcher
+    currencyBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        currencyBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-pressed', 'true');
+
+        const curr = this.getAttribute('data-currency'); // 'soles' or 'usd'
+        const isUsd = curr === 'usd';
+
+        document.querySelectorAll('#pricing-table .price-original').forEach(function (el) {
+          const val = isUsd ? el.getAttribute('data-usd') : el.getAttribute('data-soles');
+          if (val) el.textContent = val;
+        });
+
+        document.querySelectorAll('#pricing-table .price-final').forEach(function (el) {
+          const val = isUsd ? el.getAttribute('data-usd') : el.getAttribute('data-soles');
+          if (val) el.textContent = val;
+        });
+      });
+    });
+  }
+
 })();
